@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {NavigationService} from "../../services/navigation.service";
 
 @Component({
   selector: 'app-dashboard',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  constructor(private navigationService: NavigationService) {
+  }
+
+  async onClickEmployees(): Promise<void> {
+    await this.navigationService.toEmployees();
+  }
 }

@@ -12,13 +12,15 @@ import {DashboardButtonComponent} from './ui/dashboard-button/dashboard-button.c
 import {DashboardComponent} from './pages/dashboard/dashboard.component';
 import {RouterOutlet} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
+import { EmployeesComponent } from './pages/employees/employees.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DashboardButtonComponent,
-    DashboardComponent
+    DashboardComponent,
+    EmployeesComponent
   ],
   imports: [
     AppRoutingModule,
