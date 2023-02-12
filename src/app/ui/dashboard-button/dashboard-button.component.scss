@@ -1,0 +1,19 @@
+.button {
+  height: 8rem;
+  width: 14rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    mat-icon {
+      transform: scale(2.5);
+    }
+
+    label {
+      margin-top: 1.5rem;
+    }
+  }
+}
